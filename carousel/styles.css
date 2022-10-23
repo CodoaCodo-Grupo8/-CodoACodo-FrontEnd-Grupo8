@@ -1,0 +1,15 @@
+#carouselExampleCaptions .carousel-item img {  
+    object-fit: cover;
+    object-position: center;
+    overflow: hidden;
+    height:50vh;
+    weight:50vh;
+}
+
+#carouselExampleCaptions .carousel-caption h5 {
+    font-size: 50px;
+}
+
+#carouselExampleCaptions .carousel-caption h5 {
+    font-size: 50px;
+}
