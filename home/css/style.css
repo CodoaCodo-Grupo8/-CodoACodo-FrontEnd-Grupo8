@@ -26,6 +26,7 @@ body {
   font-family: var(--font-family);
 }
 
+/* Payment methods */
 .payment-methods-wrapper {
   width: 100%;
   background-color: var(--c-main);
@@ -145,6 +146,28 @@ body {
   .payment-method-image-box img:hover {
     background-color: #eee;
   }
+}
+/**/
+
+/* product card */
+.button{
+  background-color:#9CC95C;
+}
+
+#card { 
+  width: 100%;
+  display: flex;
+  padding-bottom: 15px;
+  margin-top: 10px;
+}
+
+#opciones{
+  width: 100%;
+  display: flex;
+  padding-left: 0em;
+  padding-bottom: 15px;
+  margin-top: 10px;
+  
 }
 
 @media (min-width: 1200px) {

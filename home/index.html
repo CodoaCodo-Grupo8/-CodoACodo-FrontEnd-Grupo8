@@ -17,13 +17,15 @@
   <script src="https://kit.fontawesome.com/47a442944c.js" crossorigin="anonymous"></script>
   <!-- javascript -->
   <script src="js/main.js" type="text/javascript" defer></script>
+  <!-- bootsrap CDN -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous" defer></script>
 </head>
 <body>
+  <!-- Navbar -->
   <nav class="navbar navbar-expand-lg  bg-white  ">
     <div class="container-fluid">
       <a class="navbar-brand" href="#">
         <img src="img/logo.png" alt="Logo" width="40" height="40" class="d-inline-block align-text-top  fst-normal fs-8">
-        
       </a>
      
       <a class="navbar-brand  fs-6 fst-normal" href="#"> Orgánicamente</a>
@@ -36,7 +38,7 @@
             <a class="nav-link  fs-6 fst-normal text-dark "  href="#">Inicio</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link  fs-6 fst-normal text-dark" href="#">Combo Familiar</a>
+            <a href="/lala.html" class="nav-link  fs-6 fst-normal text-dark" href="#">Combo Familiar</a>
           </li>
          
           <li class="nav-item">
@@ -50,13 +52,58 @@
     </div>
   </nav>
 
+  <!-- Carrusel -->
+  <main>
+    <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+      <div class="carousel-indicators">
+        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+      </div>
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img src="./img/carousel/mujercomprando.jpg" class="d-block w-100" alt="...">
+          <div class="carousel-caption d-none d-md-block">
+            <h5>Bienvenido a Orgánicamente</h5>
+            <p>Tu tienda de alimentos orgánicos</p>
+            <p><a class="btn btn-lg btn-primary" href="#">Ver productos</a></p>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img src="./img/carousel/frutas1.webp" class="d-block w-100" alt="...">
+          <div class="carousel-caption d-none d-md-block">
+            <h5>Second slide label</h5>
+            <p>Some representative placeholder content for the second slide.</p>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img src="./img/carousel/alimentos-organicos.jpg" class="d-block w-100" alt="...">
+          <div class="carousel-caption d-none d-md-block">
+            <h5>Third slide label</h5>
+            <p>Some representative placeholder content for the third slide.</p>
+          </div>
+        </div>
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+  </main>
+
+  <!-- Categorías de productos -->
   <div class="button"> 
     <button type="button" class="btn btn-success">FRUTAS ORGANICAS</button>
         <button type="button" class="btn btn-success">VERDURAS ORGANICAS</button>
         <button type="button" class="btn btn-success">HAMBURGUESAS ORGANICAS</button>
         <button type="button" class="btn btn-success">PIZZAS ORGANICAS</button>
-    </div> 
+  </div>
 
+  <!-- Medios de pago -->
   <div class="payment-methods-wrapper">
     <header class="payment-methods-header">
       <h3>Medios de pago</h3>
@@ -65,9 +112,53 @@
       <!-- script prints HTML here -->
     </section>
   </div>
-  
 
-    <nav class="d-flex justify-content-center navbar navbar-expand-sm bg-white  navbar-dark" >
+  <!-- Card de producto -->
+  <div id="card">
+    <div class="row row-cols-1 row-cols-md-3 g-4 justify-content-center">
+      <div class="col">
+        <div class="card h-100" style="width: 18rem;">
+          <img src="https://images.hola.com/imagenes/cocina/noticiaslibros/20210809194221/recetas-con-fruta-congelada/0-983-104/interior-frut-cong-adobe-a.jpg" class="card-img-top" alt="IMAGEN" width="50px" height="200px">
+          <div class="card-body">
+            <h3 style="min-height:45px;">PRODUCTO</h3>
+            <div><span>Precio Unitario: $<label>$$$</label></span></div>
+            <div><span>Total: $<label>$$$</label></span></div>
+            <br>
+            <div><span class="fw-bold">Elegir Cantidad</span>
+
+              <ul  id="opciones">
+                <li class="form-check form-check-inline"> <input class="form-check-input" type="radio"
+                    name="inlineRadioOptions" id="inlineRadio1" value="1">
+                  <label class="form-check-label" for="inlineRadio1">1</label>
+                </li>
+                <li class="form-check form-check-inline"> <input class="form-check-input" type="radio"
+                    name="inlineRadioOptions" id="inlineRadio1" value="2">
+                  <label class="form-check-label" for="inlineRadio2">2</label>
+                </li>
+                <li class="form-check form-check-inline"> <input class="form-check-input" type="radio"
+                    name="inlineRadioOptions" id="inlineRadio1" value="3">
+                  <label class="form-check-label" for="inlineRadio3">3</label>
+                </li>
+                <li class="form-check form-check-inline"> <input class="form-check-input" type="radio"
+                    name="inlineRadioOptions" id="inlineRadio1" value="4">
+                  <label class="form-check-label" for="inlineRadio4">4</label>
+                </li>
+                <li class="form-check form-check-inline"> <input class="form-check-input" type="radio"
+                    name="inlineRadioOptions" id="inlineRadio1" value="5">
+                  <label class="form-check-label" for="inlineRadio5">5</label>
+                </li>
+              </ul>
+
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+  
+  <!-- Footer -->
+  <nav class="d-flex justify-content-center navbar navbar-expand-sm bg-white  navbar-dark" >
 
     <div class="d-flex justify-content-center">
 
@@ -95,6 +186,6 @@
       </div>
 
     </div>
-    </nav>
+  </nav>
 </body>
 </html>
